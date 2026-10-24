@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite it as below."
+type: software
+title: >-
+  Lean 4 formalization of "Algebraic Separation Complexity of Planar Data: Existence, Exact Conic Laws, and Certificates"
+authors:
+  - family-names: Sheikh
+    given-names: Sajad Ahmad
+    affiliation: >-
+      Department of Mathematics, University of Kashmir, South Campus,
+      Anantnag, 192101, Jammu and Kashmir, India
+    email: sajadsheikh@uok.edu.in
+version: "1.0"
+repository-code: "https://github.com/sajadcosmos/Planar-Exact_SVM"
+license: MIT
+keywords:
+  - Lean 4
+  - Mathlib
+  - formal verification
+  - polynomial separation
+  - support vector machines

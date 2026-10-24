@@ -1,0 +1,40 @@
+name: Lean build
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Lean (elan)
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Fetch Mathlib
+        run: |
+          lake update
+          lake exe cache get
+
+      - name: Build the formalization
+        run: lake build
+
+      - name: Check axioms of main theorems
+        run: |
+          set -o pipefail
+          printf '%s\n' \
+            'import PlanarSVM' \
+            '#print axioms PlanarSep.compact_existence' \
+            '#print axioms PlanarSep.sepDegree_le_iff_veronese' \
+            '#print axioms PlanarSep.lt_sepDegree_iff_momentCert' \
+            '#print axioms PlanarSep.circle_law' \
+            '#print axioms PlanarSep.trans_le_of_rational' \
+            '#print axioms PlanarSep.sepDegree_affine_invariant' \
+            '#print axioms PlanarSep.local_upper_stability' \
+            '#print axioms PlanarSep.sepDegree_eq_min_svm' \
+            '#print axioms PlanarSep.xor_sepDegree' > AxiomCheck.lean
+          lake env lean AxiomCheck.lean | tee axioms.txt
+          if grep -q sorryAx axioms.txt; then echo "Found sorry"; exit 1; fi
