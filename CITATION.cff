@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this formalization, please cite it as below."
 type: software
 title: >-
-  Lean 4 formalization of "Algebraic Separation Complexity of Planar Data: Existence, Exact Conic Laws, and Certificates"
+  Lean 4 formalization of "How Curved Must an SVM Be? Exact Conic Laws, Moment Certificates, and Lean-Verified Minimum-Degree Separation of Planar Data"
 authors:
   - family-names: Sheikh
     given-names: Sajad Ahmad

@@ -1,11 +1,11 @@
-# Lean 4 formalization: *Algebraic Separation Complexity of Planar Data: Existence, Exact Conic Laws, and Certificates*
+# Lean 4 formalization: *How Curved Must an SVM Be? Exact Conic Laws, Moment Certificates, and Lean-Verified Minimum-Degree Separation of Planar Data*
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23609222.svg)](https://doi.org/10.5281/zenodo.23609222)
 
 This repository contains the complete Lean 4 / Mathlib formalization accompanying
 
 > S. A. Sheikh,
-> *Algebraic Separation Complexity of Planar Data: Existence, Exact Conic Laws, and Certificates* (2026).
+> *How Curved Must an SVM Be? Exact Conic Laws, Moment Certificates, and Lean-Verified Minimum-Degree Separation of Planar Data* (2026).
 
 The whole development is a single file, [`PlanarSVM.lean`](PlanarSVM.lean) (about 2,600 lines, namespace `PlanarSep`). It contains **no `sorry` and no `axiom` declarations**, and no external results are taken as hypotheses.
 
@@ -53,14 +53,14 @@ An automated build (GitHub Actions, see the **Actions** tab) runs on every chang
 
 If you use this formalization, please cite it as:
 
-> S. A. Sheikh, *Lean 4 formalization of "Algebraic Separation Complexity of Planar Data: Existence, Exact Conic Laws, and Certificates,"* version 1.0, Zenodo (2026), doi:[10.5281/zenodo.23609222](https://doi.org/10.5281/zenodo.23609222).
+> S. A. Sheikh, *Lean 4 formalization of "How Curved Must an SVM Be? Exact Conic Laws, Moment Certificates, and Lean-Verified Minimum-Degree Separation of Planar Data,"* version 1.0, Zenodo (2026), doi:[10.5281/zenodo.23609222](https://doi.org/10.5281/zenodo.23609222).
 
 BibTeX:
 
 ```bibtex
 @software{sheikh_planar_svm_lean_2026,
   author    = {Sheikh, Sajad Ahmad},
-  title     = {Lean 4 formalization of ``Algebraic Separation Complexity of Planar Data: Existence, Exact Conic Laws, and Certificates''},
+  title     = {Lean 4 formalization of ``How Curved Must an SVM Be? Exact Conic Laws, Moment Certificates, and Lean-Verified Minimum-Degree Separation of Planar Data''},
   version   = {1.0},
   year      = {2026},
   publisher = {Zenodo},
