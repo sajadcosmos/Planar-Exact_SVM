@@ -1,5 +1,7 @@
 # Lean 4 formalization: *Algebraic Separation Complexity of Planar Data: Existence, Exact Conic Laws, and Certificates*
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23609222.svg)](https://doi.org/10.5281/zenodo.23609222)
+
 This repository contains the complete Lean 4 / Mathlib formalization accompanying
 
 > S. A. Sheikh,
@@ -46,6 +48,26 @@ An automated build (GitHub Actions, see the **Actions** tab) runs on every chang
 | `lean-toolchain` | Pinned Lean version |
 | `CITATION.cff` | Citation metadata (powers GitHub's "Cite this repository" button) |
 | `.github/workflows/lean.yml` | Automated build and axiom check |
+
+## How to cite
+
+If you use this formalization, please cite it as:
+
+> S. A. Sheikh, *Lean 4 formalization of "Algebraic Separation Complexity of Planar Data: Existence, Exact Conic Laws, and Certificates,"* version 1.0, Zenodo (2026), doi:[10.5281/zenodo.23609222](https://doi.org/10.5281/zenodo.23609222).
+
+BibTeX:
+
+```bibtex
+@software{sheikh_planar_svm_lean_2026,
+  author    = {Sheikh, Sajad Ahmad},
+  title     = {Lean 4 formalization of ``Algebraic Separation Complexity of Planar Data: Existence, Exact Conic Laws, and Certificates''},
+  version   = {1.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23609222},
+  url       = {https://doi.org/10.5281/zenodo.23609222}
+}
+```
 
 ## Contact
 

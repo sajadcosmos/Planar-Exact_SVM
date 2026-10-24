@@ -11,7 +11,10 @@ authors:
       Anantnag, 192101, Jammu and Kashmir, India
     email: sajadsheikh@uok.edu.in
 version: "1.0"
+doi: 10.5281/zenodo.23609222
+date-released: 2026-10-24
 repository-code: "https://github.com/sajadcosmos/Planar-Exact_SVM"
+url: "https://doi.org/10.5281/zenodo.23609222"
 license: MIT
 keywords:
   - Lean 4
